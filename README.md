@@ -27,10 +27,7 @@ cd github-weather-fastapi-starter
 
 # 2) (Recommended) Create and activate a virtual environment
 python -m venv .venv
-# On macOS/Linux:
-source .venv/bin/activate
-# On Windows (PowerShell):
-# .venv\Scripts\Activate.ps1
+ .venv\Scripts\Activate.ps1
 
 # 3) Install dependencies
 pip install -r requirements.txt
@@ -121,17 +118,6 @@ GET http://localhost:3400/get_weather/London
    git remote add origin https://github.com/<YOUR_USERNAME>/<YOUR_REPO>.git
    git push -u origin main
    ```
-
-### Option B — Using GitHub CLI (if installed)
-```bash
-# log in once
-gh auth login
-
-# create a public repo from the current folder
-gh repo create <YOUR_REPO> --public --source=. --remote=origin --push
-```
-
-> **Important:** `.gitignore` already excludes `.env` so your key stays private. Never commit real secrets.
 
 ---
 
